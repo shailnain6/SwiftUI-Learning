@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AA370C2E2DC998F5005C3B3C /* SwiftUI_LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */; };
-		AA370C302DC998F5005C3B3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA370C2F2DC998F5005C3B3C /* ContentView.swift */; };
 		AA370C322DC998F7005C3B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA370C312DC998F7005C3B3C /* Assets.xcassets */; };
 		AA370C352DC998F7005C3B3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA370C342DC998F7005C3B3C /* Preview Assets.xcassets */; };
+		AA370C3C2DC99A4F005C3B3C /* ElvisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA370C2A2DC998F5005C3B3C /* SwiftUI-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LearningApp.swift; sourceTree = "<group>"; };
-		AA370C2F2DC998F5005C3B3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA370C312DC998F7005C3B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA370C342DC998F7005C3B3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElvisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */,
-				AA370C2F2DC998F5005C3B3C /* ContentView.swift */,
+				AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */,
 				AA370C312DC998F7005C3B3C /* Assets.xcassets */,
 				AA370C332DC998F7005C3B3C /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA370C302DC998F5005C3B3C /* ContentView.swift in Sources */,
+				AA370C3C2DC99A4F005C3B3C /* ElvisView.swift in Sources */,
 				AA370C2E2DC998F5005C3B3C /* SwiftUI_LearningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
