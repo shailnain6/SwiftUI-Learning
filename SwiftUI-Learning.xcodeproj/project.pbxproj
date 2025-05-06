@@ -19,6 +19,7 @@
 		AA370C312DC998F7005C3B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA370C342DC998F7005C3B3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElvisView.swift; sourceTree = "<group>"; };
+		AA370C3D2DC9A5DB005C3B3C /* Conditional Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Conditional Playground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */,
 				AA370C312DC998F7005C3B3C /* Assets.xcassets */,
 				AA370C332DC998F7005C3B3C /* Preview Content */,
+				AA370C3D2DC9A5DB005C3B3C /* Conditional Playground.playground */,
 			);
 			path = "SwiftUI-Learning";
 			sourceTree = "<group>";
