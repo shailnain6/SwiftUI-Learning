@@ -29,13 +29,15 @@ struct MessageToggleVIew: View {
                 .fontWeight(.ultraLight)
             Spacer()
             Button("Press Me!") {
-                if text == "" {
-                    updateTextAndImage(txt: "You are awesome", img: "sun.max.fill", clr: Color.blue)
-                } else if text == "You are awesome" {
-                    updateTextAndImage(txt: "You are great!", img: "hand.thumbsup", clr: Color.yellow)
-                } else {
-                    updateTextAndImage(txt: "", img: "", clr: Color.white)
-                }
+                let txt1 = "Its a Sunny Day"
+                let txt2 = "You are right!"
+                let image = "sun.max.fill"
+                let image1 = "hand.thumbsup"
+                text == "" ? 
+                updateTextAndImage(txt: txt1, img: image, clr: Color.yellow) :
+                text == txt1 ?
+                updateTextAndImage(txt: txt2, img: image1, clr: Color.blue) :
+                updateTextAndImage(txt: "", img: "", clr: Color.white)
             }
             .buttonStyle(.borderedProminent)
             .tint(Color.orange)
