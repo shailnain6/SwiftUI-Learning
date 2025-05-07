@@ -12,6 +12,7 @@
 		AA370C352DC998F7005C3B3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA370C342DC998F7005C3B3C /* Preview Assets.xcassets */; };
 		AA370C3C2DC99A4F005C3B3C /* ElvisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */; };
 		AA880E532DCADE920074421A /* MessageToggleVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA880E522DCADE920074421A /* MessageToggleVIew.swift */; };
+		AA9C8C7F2DCAFA0D002F3454 /* RandomAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9C8C7E2DCAFA0D002F3454 /* RandomAppIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElvisView.swift; sourceTree = "<group>"; };
 		AA370C3D2DC9A5DB005C3B3C /* Conditional Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Conditional Playground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AA880E522DCADE920074421A /* MessageToggleVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageToggleVIew.swift; sourceTree = "<group>"; };
+		AA9C8C7E2DCAFA0D002F3454 /* RandomAppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAppIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AA370C312DC998F7005C3B3C /* Assets.xcassets */,
 				AA370C332DC998F7005C3B3C /* Preview Content */,
 				AA370C3D2DC9A5DB005C3B3C /* Conditional Playground.playground */,
+				AA9C8C7E2DCAFA0D002F3454 /* RandomAppIconView.swift */,
 			);
 			path = "SwiftUI-Learning";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9C8C7F2DCAFA0D002F3454 /* RandomAppIconView.swift in Sources */,
 				AA880E532DCADE920074421A /* MessageToggleVIew.swift in Sources */,
 				AA370C3C2DC99A4F005C3B3C /* ElvisView.swift in Sources */,
 				AA370C2E2DC998F5005C3B3C /* SwiftUI_LearningApp.swift in Sources */,

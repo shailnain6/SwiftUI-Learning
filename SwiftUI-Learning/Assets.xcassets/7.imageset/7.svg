@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" id="clips">
+  <defs>
+    <linearGradient id="a" x2="120" y1="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fefefe"></stop>
+      <stop offset="1" stop-color="#fefefe"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="60" x2="60" y1="12.36" y2="111.53" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7e73f4"></stop>
+      <stop offset="1" stop-color="#44c5f5"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="url(#a)" rx="26"></rect>
+  <circle cx="60" cy="60" r="52" fill="url(#b)"></circle>
+  <path fill="#fefefe" d="M89.8 46.55h2v28h-2zM29.8 54.55h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h1Z"></path>
+  <rect width="42" height="37" x="30.8" y="41.55" fill="#fefefe" rx="5"></rect>
+  <path fill="#fefefe" d="m87.8 74.55-13-9v-11l13-8v28z"></path>
+</svg>
