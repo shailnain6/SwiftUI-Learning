@@ -58,11 +58,11 @@
 			children = (
 				AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */,
 				AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */,
+				AA9C8C7E2DCAFA0D002F3454 /* RandomAppIconView.swift */,
 				AA880E522DCADE920074421A /* MessageToggleVIew.swift */,
 				AA370C312DC998F7005C3B3C /* Assets.xcassets */,
 				AA370C332DC998F7005C3B3C /* Preview Content */,
 				AA370C3D2DC9A5DB005C3B3C /* Conditional Playground.playground */,
-				AA9C8C7E2DCAFA0D002F3454 /* RandomAppIconView.swift */,
 			);
 			path = "SwiftUI-Learning";
 			sourceTree = "<group>";
