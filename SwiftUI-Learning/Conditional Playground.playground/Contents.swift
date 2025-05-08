@@ -42,3 +42,11 @@ let server = "production"
 // Use uppercase or lowercase
 print(environment.lowercased())
 print(server.uppercased())
+
+//Arrays
+//Create empty arrays
+//var grades: [Double] = []
+var grades = [Double]()
+
+var fruits = ["Apple", "banana", "orange", "watermelon", "kiwi"]
+print(fruits)
