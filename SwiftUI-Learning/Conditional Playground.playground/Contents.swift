@@ -50,3 +50,12 @@ var grades = [Double]()
 
 var fruits = ["Apple", "banana", "orange", "watermelon", "kiwi"]
 print(fruits)
+
+// Generate random values
+let randomNumbers = Int.random(in: 1...20)
+print(randomNumbers)
+let randomDecimals = Double.random(in: -1.0...1.0)
+print(randomDecimals)
+let randomBools = Bool.random()
+print(randomBools)
+
