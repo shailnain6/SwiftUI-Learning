@@ -59,3 +59,9 @@ print(randomDecimals)
 let randomBools = Bool.random()
 print(randomBools)
 
+let diceNumber = 6
+var newDiceNumber = Int.random(in: 1...6)
+while diceNumber == newDiceNumber {
+    newDiceNumber = Int.random(in: 1...6)
+    print(newDiceNumber)
+}
