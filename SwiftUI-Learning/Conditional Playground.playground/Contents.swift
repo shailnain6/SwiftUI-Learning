@@ -159,5 +159,41 @@ func rollSidedDiceWithTwoParams(numberOfDices: Int, sides: Int) {
 print("Rolling number of Dices \(numberOfDices), \(sides)-sided dice: \(diceValues) Total Roll: \(sumOfTotalRolls)")
 }
 
-rollSidedDiceWithTwoParams(numberOfDices: 0, sides: 10)
+rollSidedDiceWithTwoParams(numberOfDices: 1, sides: 10)
 
+
+func average(grades: [Int]) -> Double {
+    var total = 0
+    for grade in grades {
+        total += grade
+    }
+    return Double(total) / Double(grades.count)
+}
+
+var robGrades = [40, 65, 70, 68]
+var samGrades = [50, 77, 90, 77]
+var lindaGrades = [66, 55, 67, 68]
+
+print("Rob grade average \(average(grades: robGrades))")
+print("Sam grade average \(average(grades: samGrades))")
+print("Lind grade average \(average(grades: lindaGrades))")
+
+func finalGrades(score: Double) -> String {
+    switch score {
+    case 90...100:
+        return "A"
+    case 80..<90:
+        return "B"
+    case 70..<80:
+        return "C"
+    case 60..<70:
+        return "D"
+    default:
+        return "F"
+    }
+}
+
+print("")
+print("Rob earned a \(finalGrades(score: average(grades: robGrades)))")
+print("Sam grade average \(finalGrades(score: average(grades: samGrades)))")
+print("Lind grade average \(finalGrades(score: average(grades: lindaGrades)))")
