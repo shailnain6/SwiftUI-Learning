@@ -4,22 +4,24 @@
 //
 //  Created by Shailendra Nain on 5/6/25.
 //
-
 import SwiftUI
+import AVFAudio
 
 struct RandomAppIconView: View {
     @State private var image = 0
     @State private var apps = ["App Store", "TV", "Books", "Calculator", "Calendar", "Camera", "Clips", "Clock", "Contacts", "Facetime", "Apple Store"]
     @State private var isRandomBtnClicked = false
     @State private var appName = ""
+    let numberOfImages = 11
+    @State private var audioPlayer: AVAudioPlayer!
     
     func generateRandomNumber(){
-        let randomNumber = Int.random(in: 1...11)
+        let randomNumber = Int.random(in: 1...numberOfImages)
         image = randomNumber
     }
     
     func showFirstToLastApp() {
-        image >= 11 ? (image = 0) : (image += 1)
+        image >= numberOfImages ? (image = 0) : (image += 1)
     }
     var body: some View {
         VStack(){
@@ -41,7 +43,19 @@ struct RandomAppIconView: View {
                 Button((image == 0 || isRandomBtnClicked) ? "Press Me!" : "Image - \(image)") {
                     showFirstToLastApp()
                     isRandomBtnClicked = false
+                    let soundName = "soundFile1"
+                    guard let soundFile = NSDataAsset(name: soundName) else {
+                        print("😡 Could not read file named \(soundName)")
+                        return
+                    }
+                    do {
+                        audioPlayer = try AVAudioPlayer(data: soundFile.data)
+                        audioPlayer.play()
+                    } catch {
+                        print("😡 ERROR \(error.localizedDescription) creating audioPlayer")
+                    }
                 }
+                
                 
                 Button("Random App Icon") {
                     generateRandomNumber()
