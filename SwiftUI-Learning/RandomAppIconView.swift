@@ -37,6 +37,11 @@ struct RandomAppIconView: View {
                 Toggle(isOn: $soundIsOn) {
                 }
                 .labelsHidden()
+                .onChange(of: soundIsOn) {
+                    if audioPlayer != nil && audioPlayer.isPlaying {
+                        audioPlayer.stop()
+                    }
+                }
                 
                 Spacer()
                 Button((image == 0 || isRandomBtnClicked) ? "Press Me!" : "Image - \(image)") {
