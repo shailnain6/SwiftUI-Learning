@@ -14,15 +14,7 @@ struct RandomAppIconView: View {
     @State private var appName = ""
     let numberOfImages = 11
     @State private var audioPlayer: AVAudioPlayer!
-    
-    func generateRandomNumber(){
-        let randomNumber = Int.random(in: 1...numberOfImages)
-        image = randomNumber
-    }
-    
-    func showFirstToLastApp() {
-        image >= numberOfImages ? (image = 0) : (image += 1)
-    }
+    @State private var soundIsOn = true
     var body: some View {
         VStack(){
             Spacer()
@@ -40,6 +32,13 @@ struct RandomAppIconView: View {
             
             Spacer()
             HStack {
+                Text("Sound On")
+                    .font(.caption)
+                Toggle(isOn: $soundIsOn) {
+                }
+                .labelsHidden()
+                
+                Spacer()
                 Button((image == 0 || isRandomBtnClicked) ? "Press Me!" : "Image - \(image)") {
                     showFirstToLastApp()
                     isRandomBtnClicked = false
@@ -50,7 +49,9 @@ struct RandomAppIconView: View {
                     }
                     do {
                         audioPlayer = try AVAudioPlayer(data: soundFile.data)
-                        audioPlayer.play()
+                        if(soundIsOn) {
+                            audioPlayer.play()
+                        }
                     } catch {
                         print("😡 ERROR \(error.localizedDescription) creating audioPlayer")
                     }
@@ -67,6 +68,15 @@ struct RandomAppIconView: View {
             
         }
         .padding()
+    }
+    
+    func generateRandomNumber(){
+        let randomNumber = Int.random(in: 1...numberOfImages)
+        image = randomNumber
+    }
+    
+    func showFirstToLastApp() {
+        image >= numberOfImages ? (image = 0) : (image += 1)
     }
 }
 
