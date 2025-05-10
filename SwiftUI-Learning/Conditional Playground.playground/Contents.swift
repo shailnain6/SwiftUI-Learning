@@ -197,3 +197,4 @@ print("")
 print("Rob earned a \(finalGrades(score: average(grades: robGrades)))")
 print("Sam grade average \(finalGrades(score: average(grades: samGrades)))")
 print("Lind grade average \(finalGrades(score: average(grades: lindaGrades)))")
+
