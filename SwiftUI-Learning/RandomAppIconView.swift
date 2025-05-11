@@ -70,6 +70,7 @@ struct RandomAppIconView: View {
             }
             .buttonStyle(.borderedProminent)
             .font(.title3)
+            .tint(.accentColor)
             
         }
         .padding()
@@ -85,6 +86,12 @@ struct RandomAppIconView: View {
     }
 }
 
-#Preview {
+#Preview("Light Mode") {
     RandomAppIconView()
+        .preferredColorScheme(.light)
+}
+
+#Preview("Dark Mode") {
+    RandomAppIconView()
+        .preferredColorScheme(.dark)
 }
