@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0A2CAE2DD17AC2004CFCDA /* Fundamentals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A2CAD2DD17AC2004CFCDA /* Fundamentals.swift */; };
 		AA370C2E2DC998F5005C3B3C /* SwiftUI_LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */; };
 		AA370C322DC998F7005C3B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA370C312DC998F7005C3B3C /* Assets.xcassets */; };
 		AA370C352DC998F7005C3B3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA370C342DC998F7005C3B3C /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0A2CAD2DD17AC2004CFCDA /* Fundamentals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundamentals.swift; sourceTree = "<group>"; };
 		AA23372E2DD0391200BD473F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AA370C2A2DC998F5005C3B3C /* SwiftUI-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_LearningApp.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				AA370C2D2DC998F5005C3B3C /* SwiftUI_LearningApp.swift */,
 				AA370C3B2DC99A4F005C3B3C /* ElvisView.swift */,
 				AA9C8C7E2DCAFA0D002F3454 /* RandomAppIconView.swift */,
+				AA0A2CAD2DD17AC2004CFCDA /* Fundamentals.swift */,
 				AA880E522DCADE920074421A /* MessageToggleVIew.swift */,
 				AA370C312DC998F7005C3B3C /* Assets.xcassets */,
 				AA370C332DC998F7005C3B3C /* Preview Content */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9C8C7F2DCAFA0D002F3454 /* RandomAppIconView.swift in Sources */,
+				AA0A2CAE2DD17AC2004CFCDA /* Fundamentals.swift in Sources */,
 				AA880E532DCADE920074421A /* MessageToggleVIew.swift in Sources */,
 				AA370C3C2DC99A4F005C3B3C /* ElvisView.swift in Sources */,
 				AA370C2E2DC998F5005C3B3C /* SwiftUI_LearningApp.swift in Sources */,
