@@ -198,3 +198,23 @@ print("Rob earned a \(finalGrades(score: average(grades: robGrades)))")
 print("Sam grade average \(finalGrades(score: average(grades: samGrades)))")
 print("Lind grade average \(finalGrades(score: average(grades: lindaGrades)))")
 
+
+//Working with Strings
+let names = ["John", "Lina", "Marcus"]
+var name = "Lina"
+
+var message = "A quick brown fox jumps over the lazy dog"
+var animal = "fox"
+if names.contains(name) {
+   print("Array has name \(name)")
+}
+
+if message.hasPrefix(animal) {
+    print("Message has \(animal)")
+} else {
+    print("Message does not contain name \(animal)")
+}
+
+if message.hasSuffix(animal) {
+    print("Message contains \(animal)")
+}
