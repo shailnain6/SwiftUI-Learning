@@ -198,23 +198,44 @@ print("Rob earned a \(finalGrades(score: average(grades: robGrades)))")
 print("Sam grade average \(finalGrades(score: average(grades: samGrades)))")
 print("Lind grade average \(finalGrades(score: average(grades: lindaGrades)))")
 
-
+print("\n")
 //Working with Strings
-let names = ["John", "Lina", "Marcus"]
+var names = ["John", "Lina", "Marcus"]
 var name = "Lina"
 
 var message = "A quick brown fox jumps over the lazy dog"
-var animal = "fox"
+var animal = "jumps"
 if names.contains(name) {
    print("Array has name \(name)")
 }
 
+//works with first word
 if message.hasPrefix(animal) {
     print("Message has \(animal)")
 } else {
     print("Message does not contain name \(animal)")
 }
 
+if message.contains(animal) {
+    print("Message has \(animal)")
+} else {
+    print("Message does not contain name \(animal)")
+}
+
+//works with last word
 if message.hasSuffix(animal) {
     print("Message contains \(animal)")
 }
+
+print("\n")
+//remove last value
+print("Names array before removeLast() \(names)")
+names.removeLast()
+print("Names array after removeLast() \(names)")
+
+print("\n")
+// .removeFirst(k: Int)
+var withoutSpaces = message.replacingOccurrences(of: " ", with: "")
+print(withoutSpaces)
+withoutSpaces.removeFirst(animal.count + 1)
+print(withoutSpaces)
