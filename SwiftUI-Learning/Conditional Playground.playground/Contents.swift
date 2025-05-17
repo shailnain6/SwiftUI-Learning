@@ -239,3 +239,16 @@ var withoutSpaces = message.replacingOccurrences(of: " ", with: "")
 print(withoutSpaces)
 withoutSpaces.removeFirst(animal.count + 1)
 print(withoutSpaces)
+
+
+print("\n")
+var address = "123 St. James St."
+var remove = "St."
+
+var standardAddress =  if address.hasSuffix("St.") {
+    String(address.dropLast(remove.count))
+} else {
+    ""
+}
+print(standardAddress + "Street")
+
