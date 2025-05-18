@@ -252,3 +252,20 @@ var standardAddress =  if address.hasSuffix("St.") {
 }
 print(standardAddress + "Street")
 
+var userName = "ShailENdra"
+
+for i in userName.reversed() {
+    print(i)
+}
+print("\n")
+var reversedName = String(userName.reversed())
+
+print(reversedName)
+
+print(userName.uppercased())
+print(userName.lowercased())
+print(userName.capitalized)
+
+var guessedWord = ""
+guessedWord = "_" + String(repeating: " _", count: userName.count - 1)
+print(guessedWord)
