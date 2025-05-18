@@ -269,3 +269,31 @@ print(userName.capitalized)
 var guessedWord = ""
 guessedWord = "_" + String(repeating: " _", count: userName.count - 1)
 print(guessedWord)
+
+var wordToGuess = "SWIFT"
+
+var letterGuessed = "SQFTX"
+var revealedWord = ""
+
+for letter in wordToGuess {
+    if letterGuessed.contains(letter) {
+        revealedWord += "\(letter) "
+    } else {
+        revealedWord += "_ "
+    }
+}
+revealedWord.removeLast()
+
+print("wordToGuess \(wordToGuess)")
+print("letterGuessed \(letterGuessed)")
+print("revealedWord \(revealedWord)")
+
+var revealedWordArray = wordToGuess.map { letter in
+    letterGuessed.contains(letter) ? "\(letter)" : "_"
+}.joined(separator: " ")
+print(revealedWordArray)
+
+//Functional programming shorthand
+
+revealedWordArray = wordToGuess.map { letterGuessed.contains($0) ? "\($0)" : "_"}.joined(separator: " ")
+print(revealedWordArray)
